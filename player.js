@@ -7,7 +7,7 @@ export default class Player {
         this.width = 50;
         this.height = 48;
         this.color = "blue";
-        this.speed = 5;
+        this.speed = 3;
         this.movingLeft = false;
         this.movingRight = false;
     }

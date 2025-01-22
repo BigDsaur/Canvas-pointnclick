@@ -5,7 +5,7 @@ export default class Projectile {
         this.width = 5;
         this.height = 10;
         this.color = "red";
-        this.speed = 5;
+        this.speed = 4;
 
         const angle = Math.atan2(targetY - y, targetX - x);
         this.velocity = {

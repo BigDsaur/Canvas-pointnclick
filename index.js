@@ -25,11 +25,11 @@ canvas.addEventListener("click", (event) => {
 function gameLoop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Update & Draw player
+    // Update player and draw
     player.update(canvas);
     player.draw(ctx);
 
-    // Update & Draw projectiles
+    // Update and draw projectiles
     for (let i = projectiles.length - 1; i >= 0; i--) {
         projectiles[i].update();
         projectiles[i].draw(ctx);
@@ -43,10 +43,12 @@ function gameLoop() {
         }
     }
 
-    // Update & Draw enemy
+    // Update and draw enemy
+    enemy.update(canvas);
     enemy.draw(ctx);
 
     requestAnimationFrame(gameLoop);
 }
+
 
 gameLoop();

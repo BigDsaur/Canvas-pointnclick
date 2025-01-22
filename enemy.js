@@ -5,7 +5,7 @@ export default class Enemy {
         this.width = 50;
         this.height = 50;
         this.color = "green";
-        this.health = 3;
+        this.health = 10;
     }
 
     takeDamage() {
@@ -28,9 +28,6 @@ export default class Enemy {
             ctx.fillStyle = this.color;
             ctx.fillRect(this.x, this.y, this.width, this.height);
 
-            ctx.fillStyle = "white";
-            ctx.font = "20px Arial";
-            ctx.fillText(`HP: ${this.health}`, this.x + 5, this.y - 10);
         }
     }
 }

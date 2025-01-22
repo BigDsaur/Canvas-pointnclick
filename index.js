@@ -12,7 +12,7 @@ const player = {
     width: 50,
     height: 48,
     color: "blue",
-    speed: 8,
+    speed: 4,
     movingLeft: false,
     movingRight: false
 };
@@ -39,7 +39,7 @@ canvas.addEventListener("click", (event) => {
 
     // Calculate direction
     const angle = Math.atan2(mouseY - player.y, mouseX - (player.x + player.width / 2));
-    const speed = 2;
+    const speed = 3;
     
     projectiles.push({
         x: player.x + player.width / 2, // Shoot from the center of the player
